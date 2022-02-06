@@ -1,0 +1,27 @@
+preprocess.py - extract the source_data.csv.zip into the same directory as the python file. This should produce a train_v2.csv file (rename it if the name differs). Then simply run the python file and it will produce a series of 10 csv files. The file uses the numpy and pandas libraries which can be installed like any other library (e.g., pip) 
+
+ 
+
+knnmain.py - prepares data to be used by the KNN algorithm, and initializes list of possible k-values to test in algorithm. Needs to be in the same directory as output csv’s of preprocess.py, and creates two plots, one of training data size against error rate, and another of K-value vs error rate. In addition, running the python file will also output the minimum percent with error. Uses the numpy, csv, and matplotlib libraries by importing them at the top. 
+
+ 
+
+knnpredict.py - helper function for knnmain.py. This is the function that actually implements the KNN algorithm and outputs an array with expected values. It uses the numpy library, and it should be in the same directory as knnmain.py 
+
+ 
+
+knnrun.py - helper function for knnmain.py. Also in the same directory as knnmain.py, this is where cross validation takes place. It also needs the numpy directory, which can be imported from the top of the file 
+
+ 
+
+pcalearn.py - helper function for pcamain.py. This file should be in the same directory as pcamain.py; utilize pcalearn.run() with the outlined parameters in the file to use its functionality. Uses the numpy library.  
+
+ 
+
+pcaproj.py - helper function for pcamain.py. This file should be in the same directory as pcamain.py; utilize pcaproj.run() with the outlined parameters in the file to use its functionality. Uses the numpy library. 
+
+ 
+
+pcamain.py - prepares and runs the pca algorithm on the preprocessed dataset. Requires the same directory as output csv’s of preprocess.py (train50.csv, train100.csv, train250.csv, train500.csv, train.csv, validation.csv, test.csv). Then simply run the python file, producing two plot.png files, and outputting the minimum percent error with optimizations. Uses matplotlib, numpy, csv, and sklearn, a library which can be installed like any other library (e.g., pip). 
+
+ 
