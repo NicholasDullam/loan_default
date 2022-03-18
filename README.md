@@ -7,6 +7,11 @@ To install all relevant dependencies run...
 ```
 pip install
 ```
+To preprocess the sample data run...
+```
+cd sources
+python preprocess.py
+```
 To run principle component analysis testing run...
 ```
 cd sources
