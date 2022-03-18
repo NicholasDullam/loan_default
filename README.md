@@ -7,8 +7,13 @@ To install all relevant dependencies run...
 ```
 pip install
 ```
-To run principle component analysis tests run...
+To run principle component analysis testing run...
 ```
-cd source
+cd sources
 python pcamain.py
+```
+To run k-nearest-neighbors testing run...
+```
+cd sources
+python knnmain.py
 ```
